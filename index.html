@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="img/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio W-Wave</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="js/animated.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 header__content">
+          <a class="logo header__logo">
+            <picture>
+              <source srcset="img/logo-mobile.png" media="(max-width: 480px)">
+              <source srcset="img/logo-tablet.png" media="(max-width: 1200px)">
+              <img src="img/logo.png" alt="Logo W-Wave">
+            </picture>
+          </a>
+          <nav class="nav header__nav">
+            <ul class="nav__list flex list-reset">
+              <li class="nav__item"><a href="#" class="nav__link">Podcasts</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Broadcasts</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Guests</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Playlists</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            </ul>
+          </nav>
+          <button aria-label="Search" class="btn-reset header__search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div class="hero__content">
+              <h1 class="hero__title animate__animated animate__slideInDown">Radio <span class="hero__title-italic">W-Wave</span></h1>
+              <p class="hero__descr">Hello, you're&nbsp;tuned in to W-Wave! We used to be&nbsp;a publication, but&nbsp;now we're trying ourselves out in&nbsp;the&nbsp;conversational genre. We discuss&nbsp;music, politics, history, science, and&nbsp;culture. Here, in addition to live broadcasts, you'll find a archive of shows and&nbsp;much more :)</p>
+              <a href="#" class="hero__link">Listen</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <picture>
+              <source srcset="img/hero-img-tablet.png" media="(max-width: 1200px)">
+              <img class="hero__image" src="img/hero-image.png" alt="" aria-hidden="true">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="podcasts">
+      <div class="container">
+        <h2 class="title podcasts__title">Podcasts</h2>
+        <ul class="row podcasts__list" id="myList">
+          <li class="col-lg-6 col-md-12 col-sm-12">
+            <div class="podcasts__items podcasts__item flex">
+              <div class="podcasts__item-left">
+                <picture>
+                  <source srcset="img/podcasts-1-mobile.png" media="(max-width: 576px)">
+                  <img class="podcasts__item-image" src="img/podcasts-1.png" alt="Europe. XIX век">
+                </picture>
+                <span class="podcasts__item-date">June 14</span>
+              </div>
+              <div class="podcasts__item-right">
+                <span class="podcasts__item-time">15:43</span>
+                <h3 class="podcasts__item-title">Europe. XIX century</h3>
+                <p class="podcasts__item-author">Dmitry Gutenberg</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+            <div class="podcasts__items podcasts__item flex" >
+              <div class="podcasts__item-left">
+                <picture>
+                  <source srcset="img/podcasts-2-mobile.png" media="(max-width: 576px)">
+                  <img class="podcasts__item-image" src="img/podcasts-2.png" alt="About music">
+                </picture>
+                <span class="podcasts__item-date">June 11</span>
+              </div>
+              <div class="podcasts__item-right">
+                <span class="podcasts__item-time">5:32</span>
+                <h3 class="podcasts__item-title">About music</h3>
+                <p class="podcasts__item-author">Dmitry Gutenberg</p>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+              <div class="podcasts__items podcasts__item flex">
+                <div class="podcasts__item-left">
+                  <picture>
+                    <source srcset="img/podcasts-3-mobile.png" media="(max-width: 576px)">
+                    <img class="podcasts__item-image" src="img/podcasts-3.png" alt="People today">
+                  </picture>
+                  <span class="podcasts__item-date">June 8</span>
+                </div>
+                <div class="podcasts__item-right">
+                  <span class="podcasts__item-time">8:54</span>
+                  <h3 class="podcasts__item-title">People today</h3>
+                  <p class="podcasts__item-author">Anna Vasilyeva</p>
+                </div>
+              </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+              <div class="podcasts__items podcasts__item flex">
+                <div class="podcasts__item-left">
+                  <picture>
+                    <source srcset="img/podcasts-4-mobile.png" media="(max-width: 576px)">
+                    <img class="podcasts__item-image" src="img/podcasts-4.png" alt="Hello, Africa!">
+                  </picture>
+                  <span class="podcasts__item-date">June 5</span>
+                </div>
+                <div class="podcasts__item-right">
+                  <span class="podcasts__item-time">9:04</span>
+                  <h3 class="podcasts__item-title">Hello, Africa!</h3>
+                  <p class="podcasts__item-author">Anna Vasilyeva</p>
+                </div>
+              </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+              <div class="podcasts__items podcasts__item flex">
+                <div class="podcasts__item-left">
+                  <picture>
+                    <source srcset="img/podcasts-5-mobile.png" media="(max-width: 576px)">
+                    <img class="podcasts__item-image" src="img/podcasts-5.png" alt="About everything">
+                  </picture>
+                  <span class="podcasts__item-date">June 2</span>
+                </div>
+                <div class="podcasts__item-right">
+                  <span class="podcasts__item-time">7:03</span>
+                  <h3 class="podcasts__item-title">About everything</h3>
+                  <p class="podcasts__item-author">Pyotr Dmitrievsky</p>
+                </div>
+              </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+              <div class="podcasts__items podcasts__item flex">
+                <div class="podcasts__item-left">
+                  <picture>
+                    <source srcset="img/podcasts-6-mobile.png" media="(max-width: 576px)">
+                    <img class="podcasts__item-image" src="img/podcasts-6.png" alt="Physics of color">
+                  </picture>
+                  <span class="podcasts__item-date">May 28</span>
+                </div>
+                <div class="podcasts__item-right">
+                  <span class="podcasts__item-time">9:15</span>
+                  <h3 class="podcasts__item-title">Physics of color</h3>
+                  <p class="podcasts__item-author">Tatiana Fleganova</p>
+                </div>
+              </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+              <div class="podcasts__items podcasts__item flex">
+                <div class="podcasts__item-left">
+                  <picture>
+                    <source srcset="img/podcasts-7-mobile.png" media="(max-width: 576px)">
+                    <img class="podcasts__item-image" src="img/podcasts-7.png" alt="Sound source">
+                  </picture>
+                  <span class="podcasts__item-date">May 22</span>
+                </div>
+                <div class="podcasts__item-right">
+                  <span class="podcasts__item-time">16:04</span>
+                  <h3 class="podcasts__item-title">Sound source</h3>
+                  <p class="podcasts__item-author">Pyotr Dmitrievsky</p>
+                </div>
+              </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+              <div class="podcasts__items podcasts__item flex">
+                <div class="podcasts__item-left">
+                  <picture>
+                    <source srcset="img/podcasts-8-mobile.png" media="(max-width: 576px)">
+                    <img class="podcasts__item-image" src="img/podcasts-8.png" alt="Rules of etiquette">
+                  </picture>
+                  <span class="podcasts__item-date">May 18</span>
+                </div>
+                <div class="podcasts__item-right">
+                  <span class="podcasts__item-time">6:55</span>
+                  <h3 class="podcasts__item-title">Rules of etiquette</h3>
+                  <p class="podcasts__item-author">Tatiana Fleganova</p>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="programms">
+      <div class="container">
+        <div class="programms__content">
+          <div class="programms__content-title">
+            <h2 class="programms-title">Broadcasts</h2>
+          </div>
+          <div class="programms__content-right">
+            <ul class="row programms__content-right-list">
+              <li class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="programms__content-right-item">
+                  <picture>
+                    <source srcset="img/programms1-mobile.png" media="(max-width: 576px)">
+                    <img class="programms__content-right-image" src="img/programms1.png" alt="About people and books">
+                  </picture>
+                  <div class="programms__content-right-bottom">
+                    <h3 class="programms__content-right-title">About people and books</h3>
+                    <span class="programms__content-right-descr">Announced separately</span>
+                    <a href="#" class="programms__content-right-link">See details</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="programms__content-right-item">
+                  <picture>
+                    <source srcset="img/programms2-mobile.png" media="(max-width: 576px)">
+                    <img class="programms__content-right-image" src="img/programms2.png" alt="Graphomania td">
+                  </picture>
+                  <div class="programms__content-right-bottom">
+                  <h3 class="programms__content-right-title">Graphomania td</h3>
+                  <span class="programms__content-right-descr">Mondays at 10:00</span>
+                  <a href="#" class="programms__content-right-link">See details</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="programms__content-right-item">
+                  <picture>
+                    <source srcset="img/programms3-mobile.png" media="(max-width: 576px)">
+                    <img class="programms__content-right-image" src="img/programms3.png" alt="Not Rome, not Troy">
+                  </picture>
+                  <div class="programms__content-right-bottom">
+                  <h3 class="programms__content-right-title">Not Rome, not Troy</h3>
+                  <span class="programms__content-right-descr">Tuesdays at 12:00</span>
+                  <a href="#" class="programms__content-right-link">See details</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="programms__content-right-item">
+                  <picture>
+                    <source srcset="img/programms4-mobile.png" media="(max-width: 576px)">
+                    <img class="programms__content-right-image" src="img/programms4.png" alt="Erudite">
+                  </picture>
+                  <div class="programms__content-right-bottom">
+                  <h3 class="programms__content-right-title">Erudite</h3>
+                  <span class="programms__content-right-descr">Fridays at 17:00</span>
+                  <a href="#" class="programms__content-right-link">See details</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="programms__content-right-item">
+                  <picture>
+                    <source srcset="img/programms5-mobile.png" media="(max-width: 576px)">
+                    <img class="programms__content-right-image" src="img/programms5.png" alt="The subtleties of the eras">
+                  </picture>
+                  <div class="programms__content-right-bottom">
+                  <h3 class="programms__content-right-title">The subtleties of the eras</h3>
+                  <span class="programms__content-right-descr">Saturdays at 10:00</span>
+                  <a href="#" class="programms__content-right-link">See details</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="programms__content-right-item">
+                  <picture>
+                    <source srcset="img/programms6-mobile.png" media="(max-width: 576px)">
+                    <img class="programms__content-right-image" src="img/programms6.png" alt="Living thoughts">
+                  </picture>
+                  <div class="programms__content-right-bottom">
+                  <h3 class="programms__content-right-title">Living thoughts</h3>
+                  <span class="programms__content-right-descr">Sundays at 15:30</span>
+                  <a href="#" class="programms__content-right-link">See details</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="programms__content-archive">
+            <div class="programms__content-archive-top">
+              <picture>
+                <source srcset="img/mic-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/mic-768.png" media="(max-width: 992px)">
+                <img class="programms__content-archive-image" src="img/mic.png" alt="Archive">
+              </picture>
+            </div>
+            <div class="programms__content-archive-bottom">
+              <a href="#" class="programms__content-archive-link">Archive</a>
+              <p class="programms__content-archive-descr">The archive includes all the programs that you missed! enjoy :)</p>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="quests">
+      <div class="container">
+        <h2 class="title quests__title">Guests</h2>
+        <span class="quests__caption">They come:</span>
+        <p class="quests__descr">Bloggers, art critics and&nbsp;artists, musicians, young scientists and&nbsp;scientists, historians, philologists and&nbsp;many other</p>
+      <ul class="row quests__list">
+        <li class="col-lg-12 quests__items quests__item flex">
+            <div class="quests__item-left">
+              <picture>
+                <source srcset="img/quests1-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/quests1-768.png" media="(max-width: 992px)">
+                <img src="img/quests1.png" alt="Olga Martynova">
+              </picture>
+            </div>
+            <div class="quests__item-right">
+              <h3 class="quests__item-name">Olga Martynova</h3>
+              <p class="quests__item-descr">Art critic, exhibition curator, designer, candidate of cultural studies. Art critic of the newspaper. He is active in blogging as a curator of the &laquo;Garage Museum&raquo;, which he has been since&nbsp;2016.</p>
+              <a href="#" class="quests__item-link">Broadcasts with a guest</a>
+          </div>
+        </li>
+        <li class="col-lg-12 quests__items quests__item flex">
+            <div class="quests__item-left">
+              <picture>
+                <source srcset="img/quests2-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/quests2-768.png" media="(max-width: 992px)">
+                <img src="img/quests2.png" alt="Denis Grishin">
+              </picture>
+            </div>
+            <div class="quests__item-right">
+              <h3 class="quests__item-name">Denis Grishin</h3>
+              <p class="quests__item-descr">Unequivocally, the elements of the political process are only a method of political participation&nbsp;and are mixed
+              with&nbsp;non-unique data to a degree of complete unrecognizability, which increases their&nbsp;status of uselessness.</p>
+              <a href="#" class="quests__item-link">Broadcasts with a guest</a>
+          </div>
+        </li>
+        <li class="col-lg-12 quests__items quests__item flex">
+            <div class="quests__item-left">
+              <picture>
+                <source srcset="img/quests3-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/quests3-768.png" media="(max-width: 992px)">
+                <img src="img/quests3.png" alt="Olga Martynova">
+              </picture>
+            </div>
+            <div class="quests__item-right">
+              <h3 class="quests__item-name">Olga Martynova</h3>
+              <p class="quests__item-descr">On&nbsp;the other hand, a high-quality prototype of a future project reveals an urgent need for further development
+              directions. Within the specifications of modern standards, replicated from&nbsp;foreign sources.</p>
+              <a href="#" class="quests__item-link">Broadcasts with a guest</a>
+            </div>
+        </li>
+      </ul>
+      </div>
+    </section>
+    <section class="playlist">
+      <div class="container">
+          <ul class="row playlist__content" id="playList">
+            <li class="col-xl-4 col-lg-12">
+              <div class="playlist__item">
+                <h2 class="playlist__item-title">Playlists</h2>
+                <p class="playlist__item-descr">Section &laquo;Playlists&raquo; may contain information not intended for minors</p>
+                <span class="playlist__item-copy">© 2023 l W-Wave</span>
+                <img src="img/18+.png" alt="">
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist1-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist1-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist1.png" alt="Ploho">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Ploho</h3>
+                    <p class="playlist__list-descr">3 recent albums</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist2-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist2-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist2.png" alt="Molchat Doma">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Molchat Doma</h3>
+                    <p class="playlist__list-descr">All songs</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist3-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist3-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist3.png" alt="Motorama">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Motorama</h3>
+                    <p class="playlist__list-descr">All singles</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist4-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist4-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist4.png" alt="Human Tetris">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Human Tetris</h3>
+                    <p class="playlist__list-descr">3 recent albums</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-4 playlist__none">
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist5-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist5-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist5.png" alt="Буерак">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Буерак</h3>
+                    <p class="playlist__list-descr">All EP</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist6-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist6-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist6.png" alt="Июльские Дни">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">July Days</h3>
+                    <p class="playlist__list-descr">Album «Bell»</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist7-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist7-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist7.png" alt="Joy Division">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Joy Division</h3>
+                    <p class="playlist__list-descr">Best of all time</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist8-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist8-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist8.png" alt="The Cure">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">The Cure</h3>
+                    <p class="playlist__list-descr">Best of all time</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-4 playlist__none">
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist9-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist9-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist9.png" alt="The Smiths">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">The Smiths</h3>
+                    <p class="playlist__list-descr">Best of all time</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist10-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist10-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist10.png" alt="New Order">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">New Order</h3>
+                    <p class="playlist__list-descr">Hits</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist11-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist11-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist11.png" alt="Bauhaus">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Bauhaus</h3>
+                    <p class="playlist__list-descr">All singles</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-xl-2 col-lg-4 col-md-6 col-6">
+              <div class="playlist__items">
+                <div class="playlist__list">
+                  <div class="playlist__image">
+                    <picture>
+                      <source srcset="img/playlist12-mobile.png" media="(max-width: 576px)">
+                      <source srcset="img/playlist12-tablet.png" media="(max-width: 1200px)">
+                      <img class="playlist__list-image" src="img/playlist12.png" alt="Gang Of Four">
+                    </picture>
+                  </div>
+                  <div class="playlist__text">
+                    <h3 class="playlist__list-title">Gang Of Four</h3>
+                    <p class="playlist__list-descr">3 recent albums</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <section class="advert">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 col-lg-6 col-md-12 advert__left">
+            <picture>
+              <source srcset="img/advert-img-mobile.png" media="(max-width: 576px)">
+              <source srcset="img/advert-img-768.png" media="(max-width: 992px)">
+              <source srcset="img/advert-img-tablet.png" media="(max-width: 1200px)">
+              <img src="img/advert-img.png" alt="W-Wave 1.0 ">
+            </picture>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-12 advert__right">
+            <h2 class="advert__right-title">Stay tuned on the same&nbsp;wavelength!</h2>
+            <picture>
+              <source srcset="img/advert-wave-mobile.png" media="(max-width: 992px)">
+              <source srcset="img/advert-wave-768.png" media="(max-width: 992px)">
+              <source srcset="img/advert-wave-tablet.png" media="(max-width: 1200px)">
+              <img class="advert__right-image" src="img/advert-wave.svg" alt="">
+            </picture>
+            <p class="advert__right-descr1">Friends, we are glad to present you a product of our production! Yes, yes, despite&nbsp;the fact that&nbsp;we&nbsp;have just started our way as broadcasters, we want you&nbsp;to be able to hear us properly :)</p>
+            <p class="advert__right-descr2">So, meet! Portable radio-column W-Wave 1.0&nbsp;xm. Careful selection of all parts, manual assembly, high-quality sound. Only 60&nbsp;pieces in&nbsp;3&nbsp;colors are available at the moment, but&nbsp;we&nbsp;are&nbsp;actively working on new lots and&nbsp;designs. Hurry up to buy!</p>
+            <span class="advert__right-price">28 $</span>
+            <button class="advert__right-button btn-reset">Buy on Amazon</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="row about-us__top">
+          <div class="col-xl-7 col-lg-8 about-us__text">
+            <h2 class="about-us__text-title">About</h2>
+            <span class="about-us__text-caption">Can you hear? Are we on the air? Great, let's go!</span>
+            <p class="about-us__text-descr">Friends, we&nbsp;will be very happy if you&nbsp;help us to become better. Every listener is important to us, so
+            you&nbsp;can share feedback about&nbsp;our topics, collections and&nbsp;everything! This can be done either by writing
+            to us in the &nbsp;form below, or by clicking on&nbsp;our social networks in&nbsp;the footer of the site. Thank you!
+            Let's hear! :)</p>
+          </div>
+          <div class="col-xl-5 col-lg-4">
+            <picture>
+              <source srcset="img/about-us-figures-tablet.png" media="(max-width: 1200px)">
+              <img class="about-us__items-figure" src="img/about-us-figures.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <ul class="row about-us__list">
+          <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="about-us__items">
+              <picture>
+                <source srcset="img/about-us1-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/about-us1-768.png" media="(max-width: 768px)">
+                <source srcset="img/about-us1-tablet.png" media="(max-width: 1200px)">
+                <img class="about-us__items-image" src="img/about-us1.png" alt="Dmitry Gutenberg">
+              </picture>
+                <h3 class="about-us__items-name">Dmitry Gutenberg</h3>
+                <p class="about-us__items-descr">An expert on (well, almost) everything (almost)</p>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="about-us__items">
+              <picture>
+                <source srcset="img/about-us2-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/about-us2-768.png" media="(max-width: 768px)">
+                <source srcset="img/about-us2-tablet.png" media="(max-width: 1200px)">
+                <img class="about-us__items-image" src="img/about-us2.png" alt="Anna Vasilyeva">
+              </picture>
+                <h3 class="about-us__items-name">Anna Vasilyeva</h3>
+                <p class="about-us__items-descr">How did I end up here? And&nbsp;mainly for what?</p>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="about-us__items">
+              <picture>
+                <source srcset="img/about-us3-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/about-us3-768.png" media="(max-width: 768px)">
+                <source srcset="img/about-us3-tablet.png" media="(max-width: 1200px)">
+                <img class="about-us__items-image" src="img/about-us3.png" alt="Pyotr Dmitrievsky">
+              </picture>
+                <h3 class="about-us__items-name">Pyotr Dmitrievsky</h3>
+                <p class="about-us__items-descr">People! Attention! Thank you for&nbsp;attention!</p>
+            </div>
+          </li>
+          <li class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="about-us__items">
+              <picture>
+                <source srcset="img/about-us4-mobile.png" media="(max-width: 576px)">
+                <source srcset="img/about-us4-768.png" media="(max-width: 768px)">
+                <source srcset="img/about-us4-tablet.png" media="(max-width: 1200px)">
+                <img class="about-us__items-image" src="img/about-us4.png" alt="Tatiana Fleganova">
+              </picture>
+                <h3 class="about-us__items-name">Tatiana Fleganova</h3>
+                <p class="about-us__items-descr">I&nbsp;stand beautiful in&nbsp;a coat alone, and&nbsp;around...</p>
+            </div>
+          </li>
+        </ul>
+        <div class="about-us__bottom">
+          <div class="about-us__bottom-form">
+            <textarea class="form-text" placeholder="What do you think?" name="description"></textarea>
+            <input type="text" class="form-input" placeholder="Name" name="name" pattern="[a-z]+">
+            <input type="email" class="form-input" placeholder="Email" name="email">
+          </div>
+      <a href="#" class="about-us__link">Send</a>
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" name="checkbox">
+        <span class="checkbox__text">I agree to the processing of personal data</span>
+      </label>
+    </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+        <div class="row">
+        <div class="col-xl-7 col-lg-5 col-md-12">
+          <div class="footer__left">
+            <div class="footer__left-logo">
+              <img src="img/logo-white.png" alt="">
+            </div>
+            <div class="footer__left-socials">
+              <a href="" class="footer__left-socials-link">
+                <svg class="socials" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_24531_5372)">
+                  <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z"/>
+                  </g>
+                  <defs>
+                  <clippath id="clip0_24531_5372">
+                  <rect width="24" height="24" fill="white"/>
+                  </clippath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="" class="footer__left-socials-link">
+                <svg class="socials" style="margin-top: 4px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="none">
+                  <path
+                    d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 12 24 L 12 14 L 9 14 L 9 11 L 12 11 L 12 8 C 12 5.5 13 4 16 4 L 19 4 L 19 7 L 17.699219 7 C 16.800781 7 16 7.800781 16 8.699219 L 16 11 L 20 11 L 19.5 14 L 16 14 L 16 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="col-xl-5 col-lg-7 col-md-12">
+          <div class="footer__right">
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Podcasts</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Broadcasts</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Guests</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Playlists</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Grid</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">News</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Blogs</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Tops</a></li>
+              </ul>
+            </nav>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="footer__copy">
+                    W-WAVE ® 2023
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+  </main>
+
+</body>
+</html>
